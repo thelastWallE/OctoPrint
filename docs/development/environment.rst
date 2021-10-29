@@ -4,6 +4,9 @@
 Setting up a Development environment
 ************************************
 
+Go directly to Instructions for :ref:`sec-development-environment-source-linux`, :ref:`sec-development-environment-windows` and :ref:`sec-development-environment-mac`.
+
+
 .. _sec-development-environment-source:
 
 Obtaining, building and running the source
@@ -86,6 +89,8 @@ If a Python 2 environment is also desired (e.g. for maintenance reasons), also d
 
       * ``pip install -e '.[develop,plugins]'``
 
+
+
 .. _sec-development-environment-source-linux:
 
 Linux
@@ -146,6 +151,10 @@ You can then start OctoPrint via ``octoprint`` after activating one of the two v
    Using a Linux distribution that doesn't use ``apt``? Please send a
    `Pull Request <https://github.com/OctoPrint/OctoPrint/blob/master/CONTRIBUTING.md#pull-requests>`_ to get the necessary
    steps into this guide!
+
+Continue to :ref:`sec-development-environment-ides`
+
+
 
 .. _sec-development-environment-windows:
 
@@ -238,6 +247,10 @@ These are some tools that are recommended but not required to have on hand:
            "suppressApplicationTitle": true
        },
 
+Continue to :ref:`sec-development-environment-ides`
+
+
+
 .. _sec-development-environment-mac:
 
 Mac OS X
@@ -293,6 +306,8 @@ You'll need a user account with administrator privileges.
        pre-commit install
        git config blame.ignoreRevsFile .git-blame-ignore-revs
 
+
+
 .. _sec-development-environment-ides:
 
 IDE Setup
@@ -303,6 +318,8 @@ IDE Setup
    Using another IDE than the ones below? Please send a
    `Pull Request <https://github.com/OctoPrint/OctoPrint/blob/master/CONTRIBUTING.md#pull-requests>`_ to get the necessary
    steps into this guide!
+
+Instructions for :ref:`sec-development-environment-ides-pycharm`, :ref:`sec-development-environment-ides-vscode`
 
 .. _sec-development-environment-ides-pycharm:
 
@@ -392,6 +409,10 @@ Otherwise go through Settings.
    `a debugger bug contained in earlier versions <https://youtrack.jetbrains.com/issue/PY-18365>`_ or plugin management
    will not work in your developer install when running OctoPrint from PyCharm in debug mode.
 
+
+
+.. _sec-development-environment-ides-vscode:
+
 Visual Studio Code (vscode)
 ---------------------------
 
@@ -466,7 +487,7 @@ Visual Studio Code (vscode)
                }
            ]
          }
-  
+
   In the terminal install the python extension by running this command:
 
     .. code-block:: bash
@@ -486,7 +507,7 @@ Visual Studio Code (vscode)
   * Your terminal inside vscode uses the virtual python environment
 
   * Saving a file will run an auto formatter and import sort
-  
+
   * ``Ctrl+Shift+B`` can be used to run the ``build docs`` task to rebuild the documentation
 
-  
+
